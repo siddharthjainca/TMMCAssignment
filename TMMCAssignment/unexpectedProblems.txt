@@ -1,0 +1,6 @@
+Unexpected Problems
+-------------------------------
+- If the whole middle line is black and there is no white pixel at all, then transition logic will give zero. But actually it is one continuous region, so treated it as one instead of zero.
+
+- Sometimes edges are not perfectly black or white because of compression. So instead of checking exact RGB values, just took average brightness.
+
