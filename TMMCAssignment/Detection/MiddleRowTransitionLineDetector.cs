@@ -57,6 +57,7 @@ public sealed class MiddleRowTransitionLineDetector : ILineDetector
         return count;
     }
 
+    //Gets a mask of black pixels for a row.
     private static bool[] SampleBlackMaskRow(Bitmap bitmap, int y)
     {
         int width = bitmap.Width;
